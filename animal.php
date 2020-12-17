@@ -3,17 +3,16 @@ class Animal {
 
     //property
     public $name;
-    public $legs;
-    public $cold_blooded;
+    public $legs = 2;
+    public $cold_blooded = false;
 
     //contructor
-    public function __construct($name,$legs,$cold_blooded){
+    public function __construct($name){
         $this->name = $name;
-        $this->legs = $legs;
-        $this->cold_blooded = $cold_blooded;
+        
 
     }
-    
+
     //get method
     public function get_name(){
         return $this->name;
